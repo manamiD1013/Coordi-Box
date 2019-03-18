@@ -1,0 +1,2262 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+[class^="close-"] >svg {
+  margin:8px;
+}
+
+.follow-button > form > .follow, .unfollow{
+    outline: 0;
+    border: none;
+    background: #fff;
+    padding: 0;
+    margin-top: 2px;
+  }
+.follow-button:hover{
+  background-color:#f5f5f5;
+}
+.follow-button:hover>form >input{
+  background-color:#f5f5f5;
+}
+
+.contribute-button{
+    width: 100px;
+    margin-top: 10px;
+    padding: 5px 5px;
+    color: #fff;
+    background-color: #6EB7DB;
+    border:none;
+    border-radius: 5px;
+  }
+.contribute-button:hover{
+  color: #fff;
+  opacity:0.8;
+  border:none;
+}
+
+/* focusされた時の枠線の色 */
+.contribute-button:focus, .contribute-button.focus,
+.contribute-button:not(:disabled):not(.disabled):active:focus, .contribute-button:not(:disabled):not(.disabled).active:focus,
+.show > .contribute-button.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+header{
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 2;
+    border-bottom: 1px solid #a9a9a9;
+}
+.container{
+  min-height: calc(100vh - 70px);
+  margin-bottom:60px;
+}
+
+.footer{
+  height:100px;
+  color:#fff;    
+  width:100%;   
+  text-align:center;   
+  padding-top:40px;
+  background-color:#606060;
+}
+li{
+  list-style: none;
+}
+a{
+  color:#000;
+}
+h1{
+  font-size:20px;
+}
+p{
+  margin:0;
+}
+.separator{
+  border-bottom:1px solid #a9a9a9;
+  margin-bottom:25px;
+}
+.shows > ul > .show{
+  background-color:#000;
+}
+.shows > ul > .show > a >span{
+  color:#fff;
+}
+.followings > ul > .follow{
+  background-color:#000;
+}
+.followings > ul > .follow > a >span{
+  color:#fff;
+}
+.followers > ul > .follower{
+  background-color:#000;
+}
+.followers > ul > .follower > a >span{
+  color:#fff;
+}
+
+.bookmarks > ul > .bookmark{
+  background-color:#000;
+}
+.bookmarks > ul > .bookmark > a >span{
+  color:#fff;
+}
+
+.link{
+  color:#6EB7DB;
+}
+#upload{
+  background-color: #888;
+  width:100%;
+}
+label > input {
+display:none;	/* アップロードボタンのスタイルを無効にする */
+}
+.user-header{
+    height: auto;
+  }
+.user-sub > .icon{
+  width:100%;
+  height: auto;
+}
+.user-sub > .icon > img{
+  width: 100%;
+  height: auto;
+}
+.select-image {
+text-align: center;
+color: #fff;	/* ラベルテキストの色を指定する */
+background-color: #6EB7DB;/* ラベルの背景色を指定する */
+padding: 10px 10px;	/* ラベルとテキスト間の余白を指定する */
+border-radius: 10px;
+width: 130px;
+}
+.select-image:hover{
+  opacity:0.8;
+}
+.post > .image-holder > .user{
+  border: 1px solid #a9a9a9;
+  height: 62px;
+  margin-bottom: 15px;
+}
+
+.user-icon{
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid #a9a9a9	;
+  }
+.pc-show > .main >.function-button{
+  height: 50px;
+  border: 1px solid #a9a9a9;
+}
+.pc-show >.main >.comment{
+  height: 250px;
+  border-right: 1px solid #a9a9a9;
+  border-left: 1px solid #a9a9a9;
+  border-bottom: 1px solid #a9a9a9;
+  padding:10px;
+}
+.pc-show>.main >.comment-form{
+  height: 60px;
+  border-right: 1px solid #a9a9a9;
+  border-left: 1px solid #a9a9a9;
+  border-bottom: 1px solid #a9a9a9;
+  
+}
+.pc-show > .main > .comment-form > form{
+  padding:10px;
+}
+.comment-form > form >.comment-button> .btn-primary{
+  background-color: #6EB7DB;
+  border:1px solid #6EB7DB;
+}
+.comment-form > form >.comment-button> .btn-primary:hover{
+  opacity:0.8;
+}
+.comment-form > .guest{
+  text-align: center;
+  padding: 5px;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  float: left;
+}
+
+.show-tag >ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+}
+.show-tag >ul li {
+  display: inline-block;
+  margin: 0 .3em .3em 0;
+  padding: 0;
+}
+.show-tag >ul li a {
+  display: inline-block;
+  max-width: 100px;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 1em;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+.show-tag >ul li a:hover {
+  background-color: #6EB7DB;
+  border: 1px solid #6EB7DB;
+  color: #fff;
+}
+  
+.tags > p{
+  font-size: 20px;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.users{
+  margin-bottom: 15px;
+}
+.sub > .user{
+  display:flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  margin-bottom:0;
+  padding-right: 5px;
+  height: auto;
+}
+
+
+
+.my-post >.row >.post > .image-holder > .user{
+  display:none;
+}
+.comment-holder{
+  height:90%;
+}
+.post-comment{
+  width: 100%;
+  display:flex;
+}
+.post-comment > .icon{
+  width:10%;
+  margin:0;
+  height: auto;
+  margin-bottom:10px;
+}
+.post-comment > .icon > a > img{
+  width:100%;
+  height:auto;
+  margin:0;
+}
+.post-comment > .comment-content{
+  width:90%;
+  padding-left:5px;
+  word-break: break-all;
+}
+.like-comment{
+  margin-right:0;
+  margin-bottom: 0;
+  width: auto;
+  float: left;
+}
+.show-users{
+  margin:0;
+}
+
+.post-ranking  .row {
+  counter-reset: post-ranking;
+}
+.post-ranking  .row .post .image-holder {
+  position:relative;
+}
+.post-ranking  .row .post:first-child div.image-holder:before{
+  border:2px solid #ffe400;
+}
+.post-ranking  .row .post:nth-child(2) div.image-holder:before{
+  border:2px solid #dcdcdc;
+}
+.post-ranking  .row .post:nth-child(3) div.image-holder:before{
+  border:2px solid #9a5b00;
+}
+.post-ranking  .row .post .image-holder:before {
+  position:absolute;
+  top:5px;
+  left:5px;
+  content: counter(post-ranking, decimal);
+  counter-increment: post-ranking;
+  width:28px;
+  height:28px;
+  border:2px solid #fff;
+  border-radius:50%;
+  text-align:center;
+  background:#000;
+  color:#fff;
+}
+.user-nav > ul{
+  padding-left: 0;
+  list-style: none;
+  text-align:center;
+  letter-spacing: -1em;
+  width: 99%;
+  margin: 20px auto;
+}
+.user-nav > ul > .list-inline-item{
+  width: 25%;
+  border-left: 1px solid #a9a9a9;
+  border-top: 1px solid #a9a9a9;
+  border-bottom: 1px solid #a9a9a9;
+  letter-spacing: 0;
+  margin-right:0;
+  padding: 4px;
+}
+.user-nav > ul > .list-inline-item:last-child{
+  border-right:1px solid #a9a9a9;
+}
+
+.user-nav > ul > .list-inline-item>.nav-link{
+  padding:0;
+}
+@media (max-width: 575.98px) {
+  .sp-nav{
+	    display:block;
+    }
+  .tag-ranking{
+     display:none;
+   }
+  .side-bar{
+    display:none;
+  }
+  .sp-menu-item{
+    padding:0;
+  }
+	
+	.navbar-brand{
+    margin: auto;
+    padding-right: 35px;
+        
+   }
+   	.nav-item{
+	  padding-left:15px;
+	}
+   .site-name:hover{
+    color: #000;
+    font-size: 24px;
+    margin: 0 auto;
+    text-decoration:none;
+   }
+  .sp-header .mb-3{
+    margin-bottom:0;
+  }
+	#create-button {/*円の部分*/
+	position: fixed;
+    z-index: 3;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    width: 58px;
+    height: 58px;
+    background: #6EB7DB;
+    text-align: center;
+    border-radius: 50%;
+    transition: .3s;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
+    padding-top: 15px;
+    padding-left: 7px;
+}
+
+#create-button:hover {/*ホバー時*/
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+.color{
+  color:#fff;
+  font-size:24px;
+}
+.sp-user-ranking > ul{
+  padding:0;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.sp-user-ranking > ul::-webkit-scrollbar {
+  display: none;
+}
+.sp-user-ranking > ul > li{
+  
+  display: inline-block;
+  width: 95px;
+  /* 見た目調整 */
+  height: auto;
+  margin: 3px;
+}
+.tag-post{
+  margin-left:-15px;
+  margin-right:-15px;
+}
+.show-users{
+  padding:0;
+}
+.my-post{
+    padding:0;
+  }
+
+.user-image{
+  width: 100%;
+  height: auto;
+}
+.post{
+  padding:0;
+}
+.post > .image-holder{
+  width: 99%;
+  margin-bottom: 2px;
+}
+.index> .row > .post> .image-holder > .user{
+  display:none;
+}
+.new-post> .row > .post> .image-holder > .user{
+  display:none;
+}
+.post-ranking> .row > .post> .image-holder > .user{
+  display:none;
+}
+.user > .icon{
+    margin-bottom: 0;
+  }
+
+.show-users > .users{
+  padding:0;
+}
+.show-post{
+  padding: 0;
+}
+.show-image {
+    width: 100%;
+}
+
+.show-image img{
+    width: 100%;
+    height: auto;
+}
+.main{
+  padding: 0;
+}
+.function-button .like-user{
+  padding: 10px;
+  
+}
+  .container{
+  padding-top: 60px;
+  position: relative;
+}
+.pc-show{
+  display: none;
+}
+
+.sp-show > .show-content{
+  width:95%;
+  margin: 0 auto;
+  margin-bottom:25px;
+}
+.sp-show > .show-tag{
+  width:95%;
+  margin: 0 auto;
+}
+.sp-show > .user{
+  display:flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  margin-bottom:0;
+  padding-right: 5px;
+  height: auto;
+}
+
+.sp-show > .user > .icon{
+  margin: 0;
+  height: auto;
+  padding: 5px;
+  float: left;
+  width: 20%;
+}
+.sp-show > .user > .icon > a >img{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.sp-show > .user > .user-name{
+  display: flex;
+  padding-right: 10px;
+  width: 55%;
+  margin: 0;
+  float: left;
+}
+.sp-show > .user > .user-name > p{
+  margin:auto 0;
+  font-size:16px;
+}
+.sp-show > .user > .follow-button{
+  height: 50%;
+  width: 25%;
+  margin: auto 0;
+  display: flex;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+}
+
+.sp-show > .user > .follow-button > form{
+  width: 100%;
+  display: flex;
+}
+
+.sp-show > .user > .follow-button > form > .follow, .unfollow{
+  padding: 0;
+  font-size: 13px;
+  margin: auto;
+}
+.function-button{
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #a9a9a9; 
+}
+.function-button > .like-comment{
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 2px;
+  width: auto;
+  float: left;
+}
+.function-button > .like-comment > .like-button{
+    padding: 0;
+    margin: 0;
+    width:auto;
+    float: left;
+}
+.function-button > .like-comment > .comment{
+  width: 40px;
+  float: left;
+  padding-top: 4px;
+  padding-left: 15px;
+}
+.like-comment > .like-button > form > button{
+  padding: 0;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.function-button >.bookmark{
+  float: right;
+}
+.bookmark-button{
+  padding:0;
+  margin:0;
+}
+.show-comment{
+  width:95%;
+  margin:0 auto;
+  margin-bottom: 25px;
+}
+.comment{
+  height: calc(100% - 63px);
+  padding: 0 10px;
+}
+.comment-form{
+  border-top: 1px solid #a9a9a9;
+  position: absolute;
+    bottom: 0;
+    height: 67px;
+    padding: 5px;
+    border-top: 1px solid #a9a9a9;
+    width: 100%;
+    background-color: #fff;
+}
+.comment-form >form> .icon{
+  margin: 0;
+  width: 55px;
+}
+.comment-form >form>.icon > .user-icon{
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+.comment-form >form> .form{
+  width: calc(80% - 55px);
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+}
+
+.comment-form > form> .comment-button{
+  padding-top: 7px;
+}
+.comment-form > .guest {
+    text-align: center;
+}
+.user-ranking > .users > .user {
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    margin-left: 3px;
+}
+.user-ranking > .users >.user > .icon {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.user-ranking > .users >.user > .icon > .user-icon {
+    border-radius: 50%;
+    width: 100%;
+    margin: 0;
+    
+}
+.user-ranking > .users >.user > .content {
+    display:none;
+    
+}
+.pc-header{
+  display:none;
+}
+.sp-header{
+  padding: 10px;
+}
+.sp-header > .user-sub{
+  width:25%;
+}
+.sp-header > .user-main{
+  width: 75%;
+  padding-left: 10px;
+}
+.sp-header > .user-main > div{
+  padding-top:17px;
+}
+.sp-header > .user-main > div>.user-name{
+  margin:0;
+  padding-right:15px;
+  float: left;
+  width: 50%;
+}
+.sp-header > .user-main > div>.user-name> .name > h1{
+  font-size: 18px;
+  margin: 0;
+}
+.sp-header > .user-main >div>.user-name> .user-id > p{
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.sp-header > .user-main > .introduce > p{
+font-size: 13px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.sp-header > .user-main > .list-inline > li > a {
+  padding:0;
+  text-decoration: none;
+  color: #000;
+}
+.sp-header > .user-main > .list-inline > li > a > span{
+  padding: 0;
+}
+.sp-header > .user-main > div> .follow-button{
+  width:50%;
+  margin-right: 10px;
+  height: 40px;
+  display: flex;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+  text-align:center;
+}
+.sp-header > .user-main > div> .follow-button > a{
+  width: 100%;
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  margin: auto;
+}
+.sp-header > .user-main >div> .follow-button > form{
+  width: 100%;
+  margin:auto;
+}
+.sp-header > .user-main >div> .follow-button > form > input{
+  padding:0;
+  font-size:16px;
+}
+/*.pc-only{*/
+/*  display:none;*/
+/*}*/
+.follow, .follower{
+  padding-right:15px;
+  padding-left:15px;
+}
+.show-users{
+  width:95%;
+  margin:0 auto;
+}
+.show-users >.users >.user{
+  display: flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  margin-bottom: 0;
+  padding: 5px;
+  height: auto;
+}
+.show-users >.users >.user > .icon{
+  float: left;
+  width: 20%;
+  margin: 0;
+  height: auto;
+}
+.show-users >.users >.user > .icon >.user-icon{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.show-users >.users >.user > .content{
+  float: left;
+  margin: auto 0;
+  width: 50%;
+  padding-right: 5px;
+  margin-left: 5px;
+}
+.show-users > .users > .user >.content >.user-name > h5{
+  margin: 0;
+  font-size: 16px;
+}
+.show-users > .users > .user >.content >div > ul{
+  margin:0;
+}
+.show-users > .users > .user >.content >div > ul>li{
+  font-size:10px;
+}
+.show-users >.users >.user > .follow-button{
+  float:left;
+  width: 30%;
+  display: flex;
+  height: 35px;
+  margin: auto 0;
+  border: solid 1px #a9a9a9;
+  border-radius: 5px;
+}
+.show-users > .users > .user > .follow-button > form{
+  width: 100%;
+  display: flex;
+}
+.show-users > .users > .user > .follow-button > form > .follow, .unfollow{
+  padding: 0;
+  font-size: 12px;
+  margin: auto;
+}
+.pc-timeline{
+  display:none;
+}
+.sp-timeline > .row> .post >.image-holder{
+  width:100%;
+  margin-bottom: 30px;
+}
+
+.sp-timeline > .row >.post > .image-holder > .user {
+  margin: 0;
+  display: flex;
+  padding: 5px;
+  border: none;
+  height: auto;
+}
+.sp-timeline > .row >.post > .image-holder > .user>.icon {
+  margin-bottom: 0;
+  margin: 0;
+  width: 15%;
+  height: auto;
+}
+.sp-timeline > .row >.post > .image-holder > .user>.icon>a>img{
+  width: 100%;
+  height: auto;
+}
+.sp-timeline > .row > .post >.image-holder > .user >.user-name{
+  display: flex;
+  margin: auto 0;
+  padding-left: 10px;
+}
+.sp-timeline > .row >.post > .image-holder > .function-button{
+  border:none;
+}
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.navbar-brand{
+    margin: auto;
+    padding-right: 25px;
+   }
+   .side-bar{
+     display:none;
+   }
+	.sp-nav{
+	    display:block;
+	}
+	.sp-menu{
+	  display: block;
+	}
+	.sp-menu-item{
+    padding:0;
+  }
+	.container{
+  padding-top:60px;
+}
+	.navbar-brand{
+    margin: auto;
+    padding-right: 35px;
+        
+   }
+   	.nav-item{
+	  padding-left:15px;
+	}
+.navbar > .pc-nav{
+  display:none;
+}
+
+	#create-button {/*円の部分*/
+	position: fixed;
+    z-index: 3;
+    bottom: 10px;
+    right: 10px;
+    display: block;
+    width: 58px;
+    height: 58px;
+    background: #6EB7DB;
+    text-align: center;
+    border-radius: 50%;
+    transition: .3s;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);
+    padding-top: 15px;
+    padding-left: 7px;
+}
+
+#create-button:hover {/*ホバー時*/
+  box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+.color{
+  color:#fff;
+  font-size:24px;
+}
+
+	.site-name{
+        color: #000;
+        font-size: 24px;
+        padding-right: 10px;
+        text-decoration:none;
+   }
+   .site-name:hover{
+      color: #000;
+      font-size: 24px;
+      padding-right: 10px;
+      text-decoration:none;
+   }
+   .image{
+    display: flex;
+  }
+  .user-ranking{
+    display:none;
+  }
+  
+  .sp-user-ranking > ul{
+  padding:0;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.sp-user-ranking > ul::-webkit-scrollbar {
+  display: none;
+}
+.sp-user-ranking > ul > li{
+  
+  display: inline-block;
+  width: 95px;
+  /* 見た目調整 */
+  height: auto;
+  margin: 3px;
+}
+.tag-post{
+  margin-left:-15px;
+  margin-right:-15px;
+}
+.show-users > .users{
+  padding:0;
+}
+  .post{
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .my-post{
+    padding:0;
+  }
+	
+  .user-image{
+    width:100%;
+    height: auto;
+  }
+ .user{
+    height: 50px;
+  }
+  .post > .image-holder > .user{
+    margin-bottom: 15px;
+    height:52px;
+  }
+  .user > .icon{
+    margin-bottom: 0;
+  }
+  
+  .main  .function-button .like-user{
+    width: 85%;
+  }
+  .main > .show-image > img{
+    width: 100%;
+    height: auto;
+  }
+
+.show-post{
+  padding: 0;
+}
+.show-image {
+    width: 100%;
+}
+
+.show-image > img{
+    width: 100%;
+    height: auto;
+}
+.main{
+  padding: 0;
+}
+.pc-show{
+  display:none;
+}
+.sp-show > .user{
+  display:flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  margin-bottom:0;
+  padding-right: 5px;
+  height: auto;
+}
+
+.sp-show > .user > .icon{
+  margin: 0;
+  height: auto;
+  padding: 5px;
+  float: left;
+  width:15%;
+}
+.sp-show > .user > .icon > a >img{
+  margin: 0;
+  width:100% ;
+  height: auto;
+}
+.sp-show > .user > .user-name{
+  display: flex;
+  padding-right: 10px;
+  width: 65%;
+  margin: 0;
+  float: left;
+}
+.sp-show > .user > .user-name > p{
+  margin:auto 0;
+  font-size:24px;
+}
+.sp-show > .user > .follow-button{
+  height: 50%;
+  width: 20%;
+  margin: auto 0;
+  display: flex;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+}
+
+.sp-show > .user > .follow-button > form{
+  width: 100%;
+  display: flex;
+}
+
+.sp-show > .user > .follow-button > form > .follow, .unfollow{
+  padding: 0;
+  font-size: 18px;
+  margin: auto;
+}
+.sp-show > .show-content{
+  width:95%;
+  margin: 0 auto;
+  margin-bottom:25px;
+}
+
+.sp-show > .show-tag{
+  width:95%;
+  margin: 0 auto;
+}
+
+.sp-show > .show-content{
+  width:95%;
+  margin: 0 auto;
+  margin-bottom:25px;
+}
+.sp-show > .show-tag{
+  width:95%;
+  margin: 0 auto;
+}
+
+.sp-show > .show-comment{
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.my-post >.row >.post > .image-holder{
+  margin-bottom: 10px;
+}
+
+.function-button{
+  
+  width: 100%;
+  height: 45px;
+  border-bottom: 1px solid #a9a9a9; 
+}
+.function-button > .like-comment{
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 2px;
+  width: auto;
+  float: left;
+}
+.function-button > .like-comment > .like-button{
+  padding: 0;
+  margin: 0;
+  float: left;
+  width:auto;
+}
+.function-button > .like-comment > .comment{
+  width: auto;
+  float: left;
+  padding-top: 4px;
+  padding-left: 15px;
+}
+.like-comment > .like-button > form > button{
+  padding: 0;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.function-button >.bookmark{
+  float: right;
+}
+.bookmark-button{
+  padding:0;
+  margin:0;
+}
+.comment{
+  height: calc(100% - 94px);
+  padding: 10px;
+}
+.comment-form{
+  border-top: 1px solid #a9a9a9;
+  position: absolute;
+  bottom: 0;
+  height: 67px;
+  padding: 5px;
+  border-top: 1px solid #a9a9a9;
+  width: 100%;
+
+}
+.comment-form >form> .icon{
+  margin: 0;
+  width: 55px;
+}
+.comment-form >form>.icon > .user-icon{
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+.comment-form >form> .form{
+  width: calc(80% - 55px);
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+}
+
+.comment-form > form> .comment-button{
+  padding-top: 7px;
+}
+.comment-form > .guest {
+    text-align: center;
+    padding-top: 15px;
+}
+.user-ranking > .users > .user {
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    margin-left: 3px;
+}
+.user-ranking > .users >.user > .icon {
+    float: left;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.user-ranking > .users >.user > .icon > .user-icon {
+    border-radius: 50%;
+    width: 100%;
+    margin: 0;
+    
+}
+.user-ranking > .users >.user > .content {
+    display:none;
+    
+}
+.sp-header{
+  display:none;
+}
+.pc-header > .user-sub{
+  width:25%;
+  padding-left: 15px;
+}
+.pc-header > .user-sub > .follow-button{
+  width: 85%;
+  height: 40px;
+  border: 1px solid #a9a9a9;
+  margin: 0 auto;
+  border-radius: 5px
+}
+.pc-header > .user-sub > .follow-button > form{
+  margin: auto;
+  font-size: 12px;
+}
+.pc-header > .user-sub > .follow-button > a{
+  margin: auto;
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+}
+.pc-header > .user-main{
+  width: 75%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.pc-header > .user-main >.name> h1{
+  margin: 0;
+}
+.pc-header > .user-main >.user-id> p{
+  margin: 0;
+}
+.pc-header > .user-main > .sp-only{
+  margin: 0;
+  margin-bottom: 10px;
+}
+.pc-header > .user-main > .sp-only>li>a{
+  padding: 0
+}
+
+.follow, .follower{
+  padding-right:15px;
+  padding-left:15px;
+}
+/*.pc-only{*/
+/*  display:none;*/
+/*}*/
+.post > .image-holder > .user{
+  margin-bottom: 15px;
+  display: flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  height: auto;
+}
+.post > .image-holder > .user > .icon{
+  margin: 0;
+  float: left;
+  width: 30%;
+  padding: 5px;
+  height: auto;
+}
+.post > .image-holder > .user > .icon > a >img{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.post > .image-holder > .user > .icon > a >img:hover{
+  opacity:0.6;
+}
+
+.post > .image-holder > .user >  .user-name{
+  margin: 0;
+  display: flex;
+  float: left;
+  width: 70%;
+}
+.post > .image-holder > .user > .user-name > p{
+  margin: auto 0;
+}
+.text-left{
+  width:95%;
+  margin:0 auto;
+}
+.show-users{
+  width:95%;
+  margin:0 auto;
+}
+.show-users >.users >.user{
+  display: flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  margin-bottom: 0;
+  padding: 10px;
+  height: auto;
+}
+.show-users >.users >.user > .icon{
+  float: left;
+  width: 25%;
+  margin: 0;
+  height: auto;
+  padding-right: 5px;
+}
+.show-users >.users >.user > .icon >.user-icon{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.show-users >.users >.user > .content{
+  float: left;
+  margin: auto 0;
+  width: 55%;
+  padding-right: 5px;
+  margin-left: 5px;
+}
+.show-users > .users > .user >.content >.user-name > h5{
+  margin: 0;
+  font-size: 24px;
+}
+.show-users > .users > .user >.content >div > ul{
+  margin:0;
+}
+.show-users > .users > .user >.content >div > ul>li{
+  font-size:16px;
+}
+.show-users >.users >.user > .follow-button{
+  float:left;
+  width: 25%;
+  display: flex;
+  height: 50px;
+  margin: auto 0;
+  border: solid 1px #a9a9a9;
+  border-radius: 5px;
+}
+.show-users > .users > .user > .follow-button > form{
+  width: 100%;
+  display: flex;
+}
+.show-users > .users > .user > .follow-button > form > .follow, .unfollow{
+  padding: 0;
+  font-size: 16px;
+  margin: auto;
+}
+.pc-timeline{
+  display:none;
+}
+.sp-timeline>.row>.post>.image-holder{
+  border:solid 1px #a9a9a9;
+}
+.sp-timeline > .row >.post > .image-holder > .user {
+  display: flex;
+  width: 100%;
+  border: none;
+  height: auto;
+  margin: 0;
+}
+.sp-timeline > .row >.post > .image-holder > .user>.icon {
+  width:20%;
+}
+.sp-timeline > .row >.post > .image-holder > .function-button{
+  border:none;
+}
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.sp-nav{
+	    display:none;
+	}
+	.sp-menu{
+	  display: none;
+	}
+	.sp-show{
+	  display:none;
+	}
+
+	#create-button{
+	  display:none;
+	}
+	.site-name{
+    color: #000;
+    font-size: 24px;
+    padding-right: 10px;
+    text-decoration:none;
+   }
+   .site-name:hover{
+        color: #000;
+        font-size: 24px;
+        padding-right: 10px;
+        text-decoration:none;
+   }
+   .image{
+    display: flex;
+  }
+  
+  .post{
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  
+  .sp-user-ranking{
+    display:none;
+  }
+  
+  .user-image{
+    width:100%;
+    height: auto;
+  }
+
+  .user{
+    height: 50px;
+  }
+  
+.show-image .function-button .like-user{
+    width: 100%;
+  }
+.show-image img{
+    width: 100%;
+    height: auto;
+  }
+  .container{
+  padding-top: 80px;
+  position: relative;
+}
+
+
+.follow-button{
+  width: 180px;
+  margin-left: 15px;
+}
+
+
+.my-post >.row >.post > .image-holder{
+  margin-bottom: 10px;
+}
+.form{
+  width: 63%;
+}
+.user-ranking > .users > .user {
+    height: 55px;
+    padding-left: 10px;
+}
+.user-ranking > .users >.user > .icon {
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.user-ranking > .users >.user > .icon > .user-icon {
+    border-radius: 50%;
+    width: 100%;
+    
+}
+.user-ranking > .users >.user > .content {
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 73%;
+    
+}
+.user-ranking > .users > .user > .content > .user-name {
+  margin:0;
+}
+.user-ranking > .users > .user > .content > .user-name > h5 {
+  font-size: 15px;
+  margin: 0;
+}
+    
+.user-ranking > .users > .user > .content > div >.list-inline {
+  margin: 0;
+}  
+.user-ranking > .users > .user > .content  > div >.list-inline >.list-inline-item > a {
+  font-size: 12px;
+}
+.pc-header >.user-sub{
+  width:25%;
+  padding-left: 15px;
+}
+.sp-only{
+  display:none;
+}
+.sub > .user{
+  display:flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  margin-bottom:0;
+  padding-right: 5px;
+  height: auto;
+}
+
+.sub > .user > .icon{
+  margin: 0;
+  height: auto;
+  padding: 5px;
+  float: left;
+  width:20%;
+}
+.sub > .user > .icon > a >img{
+  margin: 0;
+  width:100% ;
+  height: auto;
+}
+.sub > .user > .user-name{
+  display: flex;
+  padding-right: 10px;
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+.sub > .user > .user-name > p{
+  margin:auto 0;
+}
+.sub > .user > .follow-button{
+  height: 30px;
+  width: 30%;
+  margin: auto 0;
+  display: flex;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+}
+
+.sub > .user > .follow-button > form{
+  width: 100%;
+  display: flex;
+}
+
+.sub > .user > .follow-button > form > .follow, .unfollow{
+  padding: 0;
+  font-size: 11px;
+  margin: auto;
+}
+
+.sub > .show-content{
+    border-right: 1px solid #a9a9a9;
+    border-left: 1px solid #a9a9a9;
+    border-bottom: 1px solid #a9a9a9;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .sub > .show-content > .time{
+    border-top: 1px solid #a9a9a9;
+    padding: 2px;
+  }
+
+ .like-comment{
+    float: left;
+    width:auto;
+  }
+  .function-button >.bookmark{
+    float:right;
+  }
+  .like-comment > .like-button{
+    float: left;
+    margin: 0;
+    width:auto;
+    margin-left: 5px;
+    margin-top: 7px;
+    text-align: center;
+  }
+  .like-comment > .like-button > form > button{
+     padding: 0;
+  }
+  .like-comment > .comment{
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.sp-header{
+  display:none;
+}
+.user-header > .row > .user-sub > .follow-button{
+  width: 85%;
+  height: 45px;
+  border: 1px solid #a9a9a9;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.user-header > .row > .user-sub > .follow-button > form{
+  margin: auto;
+}
+.user-header > .row > .user-sub > .follow-button > form > .follow,.unfollow{
+  margin: auto;
+  font-size: 14px;
+}
+.user-header > .row > .user-sub > .follow-button > a{
+  margin: auto;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+.user-header > .row > .user-main{
+  width:75%;
+  padding:15px;
+} 
+.user-header > .row > .user-main > .name >h1{
+  margin-bottom:0;
+}
+.post > .image-holder > .user{
+  margin-bottom: 15px;
+  display: flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  height: auto;
+}
+.post > .image-holder > .user > .icon{
+  margin: 0;
+  float: left;
+  width: 30%;
+  padding: 5px;
+  height: auto;
+}
+.post > .image-holder > .user > .icon > a >img{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.post > .image-holder > .user > .icon > a >img:hover{
+  opacity:0.6;
+}
+.post > .image-holder > .user >  .user-name{
+  margin: 0;
+  display: flex;
+  float: left;
+  width: 70%;
+}
+.post > .image-holder > .user > .user-name > p{
+  margin: auto 0;
+}
+.show-users >.users >.user{
+  display: flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  margin-bottom: 0;
+  padding: 10px;
+  height: auto;
+}
+.show-users >.users >.user > .icon{
+  float: left;
+  width: 25%;
+  margin: 0;
+  height: auto;
+  padding-right: 5px;
+}
+.show-users >.users >.user > .icon >.user-icon{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.show-users >.users >.user > .content{
+  float: left;
+  margin: auto 0;
+  width: 55%;
+  padding-right:5px;
+}
+.show-users > .users > .user >.content >.user-name > h5{
+  margin: 0;
+}
+.show-users > .users > .user >.content >div > ul{
+  margin:0;
+}
+.show-users > .users > .user >.content >div > ul>li{
+  font-size:12px;
+}
+.show-users >.users >.user > .follow-button{
+  float:left;
+  width: 25%;
+  display: flex;
+  height: 35px;
+  margin: auto 0;
+  border: solid 1px #a9a9a9;
+  border-radius: 5px;
+}
+.show-users > .users > .user > .follow-button > form{
+  width: 100%;
+  display: flex;
+}
+.show-users > .users > .user > .follow-button > form > .follow, .unfollow{
+  padding: 0;
+  font-size: 11px;
+  margin: auto;
+}
+.sp-timeline{
+  display:none;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.sp-nav{
+	    display:none;
+	}
+	.sp-menu{
+	  display: none;
+	}
+	.sp-show{
+	  display:none;
+	}
+	#create-button{
+	  display:none;
+	}
+	.site-name{
+        color: #000;
+        font-size: 24px;
+        padding-right: 10px;
+        text-decoration:none;
+   }
+   .site-name:hover{
+        color: #000;
+        font-size: 24px;
+        padding-right: 10px;
+        text-decoration:none;
+   }
+   .image{
+    display: flex;
+  }
+  .post{
+    padding:0;
+    padding-left: 5px;
+    padding-right:5px;
+  }
+  .sp-user-ranking{
+    display:none;
+  }
+  
+ 　.user-image{
+    width:100%;
+    height: auto;
+  }
+  .user-image{
+    width:100%;
+    height: auto;
+  }
+ 
+  .main .show-image .function-button .like-user{
+    width: 85%;
+  }
+  .main .show-image img{
+    width: 100%;
+    height: auto;
+  }
+  .container{
+  padding-top: 80px;
+  position: relative;
+}
+
+  .container{
+  padding-top: 80px;
+  position: relative;
+}
+.user-main > .name > h3{
+  margin-bottom: 5px;
+}
+
+.my-post >.row >.post > .image-holder{
+  margin-bottom: 10px;
+}
+.form{
+  width: 63%;
+}
+.user-ranking > .users > .user {
+    height: 55px;
+    padding-left: 10px;
+}
+.user-ranking > .users >.user > .icon {
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.user-ranking > .users >.user > .icon > .user-icon {
+    border-radius: 50%;
+    width: 100%;
+    
+}
+.user-ranking > .users >.user > .content {
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 73%;
+    
+}
+.user-ranking > .users > .user > .content > .user-name {
+  margin:0;
+}
+.user-ranking > .users > .user > .content > .user-name > h5 {
+  font-size: 15px;
+    margin: 0;
+}
+    
+.user-ranking > .users > .user > .content > div >.list-inline {
+  margin: 0;
+}  
+.user-ranking > .users > .user > .content  > div >.list-inline >.list-inline-item > a {
+  font-size: 12px;
+}
+.sub > .user{
+  display:flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  margin-bottom:0;
+  padding-right: 5px;
+  height: auto;
+}
+
+.sub > .user > .icon{
+  margin: 0;
+  height: auto;
+  padding: 5px;
+  float: left;
+  width:20%;
+}
+.sub > .user > .icon > a >img{
+  margin: 0;
+  width:100% ;
+  height: auto;
+}
+.sub > .user > .user-name{
+  display: flex;
+  padding-right: 10px;
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+.sub > .user > .user-name > p{
+  margin:auto 0;
+}
+.sub > .user > .follow-button{
+  height: 30px;
+  width: 30%;
+  margin: auto 0;
+  display: flex;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+}
+
+.sub > .user > .follow-button > form{
+  width: 100%;
+  display: flex;
+}
+
+.sub > .user > .follow-button > form > .follow, .unfollow{
+  padding: 0;
+  font-size: 12px;
+  margin: auto;
+}
+
+.sub > .show-content{
+    border-right: 1px solid #a9a9a9;
+    border-left: 1px solid #a9a9a9;
+    border-bottom: 1px solid #a9a9a9;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .sub > .show-content > .time{
+    border-top: 1px solid #a9a9a9;
+    padding: 2px;
+  }
+
+ .like-comment{
+    float: left;
+  }
+  .function-button >.bookmark{
+    float:right;
+  }
+  .like-comment > .like-button{
+    float: left;
+    margin: 0;
+    width:auto;
+    margin-left: 5px;
+    margin-top: 7px;
+    text-align: center;
+  }
+  .like-comment > .like-button > form > button{
+     padding: 0;
+  }
+  .like-comment > .comment{
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+ .sp-header{
+  display:none;
+}
+.sp-only{
+  display:none;
+}
+.pc-header >.user-sub{
+  width:25%;
+}
+.pc-header > .user-sub > .follow-button{
+  width: 80%;
+  height: 45px;
+  border: 1px solid #a9a9a9;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.pc-header > .user-sub > .follow-button > form{
+  margin: auto;
+}
+.pc-header > .user-sub > .follow-button > a{
+  margin: auto;
+  text-decoration: none;
+  color: #000;
+}
+.pc-header > .user-main{
+  width:75%;
+  padding-left: 15px;
+  padding-top:15px;
+} 
+.pc-header > .user-main > .name >h1{
+  margin-bottom:0;
+}
+
+.post > .image-holder > .user{
+  margin-bottom: 15px;
+  display: flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  height: auto;
+}
+.post > .image-holder > .user > .icon{
+  margin: 0;
+  float: left;
+  width: 30%;
+  padding: 5px;
+  height: auto;
+}
+.post > .image-holder > .user > .icon > a >img{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.post > .image-holder > .user > .icon > a >img:hover{
+  opacity:0.6;
+}
+.post > .image-holder > .user >  .user-name{
+  margin: 0;
+  display: flex;
+  float: left;
+  width: 70%;
+}
+.post > .image-holder > .user > .user-name > p{
+  margin: auto 0;
+}
+.show-users >.users >.user{
+  display: flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  margin-bottom: 0;
+  padding: 5px;
+  height: auto;
+}
+.show-users >.users >.user > .icon{
+  float: left;
+  width: 25%;
+  margin: 0;
+  height: auto;
+  padding-right: 5px;
+}
+.show-users >.users >.user > .icon >.user-icon{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.show-users >.users >.user > .content{
+  float: left;
+  margin: auto 0;
+  width: 55%;
+  padding-right:5px;
+}
+.show-users > .users > .user >.content >.user-name > h5{
+  margin: 0;
+}
+.show-users > .users > .user >.content >div > ul{
+  margin:0;
+}
+.show-users >.users >.user > .follow-button{
+  float:left;
+  width: 25%;
+  display: flex;
+  height: 40px;
+  margin: auto 0;
+  border: solid 1px #a9a9a9;
+  border-radius: 5px;
+}
+.show-users > .users > .user > .follow-button > form{
+  width: 100%;
+  display: flex;
+}
+.show-users > .users > .user > .follow-button > form > .follow, .unfollow{
+  padding: 0;
+  font-size: 13px;
+  margin: auto;
+}
+.sp-timeline{
+  display:none;
+}
+}
+
+@media (min-width: 1200px) {
+	.sp-nav{
+	    display:none;
+	}
+	.sp-menu{
+	  display: none;
+	}
+	
+	.sp-show{
+	  display:none;
+	}
+	
+	#create-button{
+	  display:none;
+	}
+	.site-name{
+        color: #000;
+        font-size: 24px;
+        padding-right: 10px;
+        text-decoration:none;
+   }
+   .site-name:hover{
+        color: #000;
+        font-size: 24px;
+        padding-right: 10px;
+        text-decoration:none;
+   }
+  .image{
+    display: flex;
+  }
+  .index > .row > .post{
+    padding:0;
+  }
+  .index > .row > .post>.image-holder{
+    width:95%;
+    margin: 0 auto;
+  }
+  
+  .sp-user-ranking{
+    display:none;
+  }
+  .user-image{
+    width:100%;
+    height: auto;
+  }
+  .user-image{
+    width:100%;
+    height: auto;
+  }
+  .user{
+    height: 60px;
+    margin-bottom: 15px;
+  }
+  .user >.follow-button > form > .follow .unfollow{
+    font-size:16px;
+    height: 40px;
+    width: 150px;
+    background-color: #fff;
+    border: solid 1px #a9a9a9;
+    border-radius: 5px;
+  }
+  .like-comment{
+    float: left;
+  }
+  .function-button >.bookmark{
+    float:right;
+  }
+  .like-comment > .like-button{
+    float: left;
+    margin: 0;
+    width:auto;
+    margin-left: 5px;
+    margin-top: 7px;
+    text-align: center;
+  }
+  .like-comment > .like-button > form > button{
+     padding: 0;
+  }
+  .like-comment > .comment{
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+  
+  .sub > .user{
+  display:flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  margin-bottom:0;
+  padding-right: 5px;
+  height: auto;
+}
+
+.sub > .user > .icon{
+  margin: 0;
+  height: auto;
+  padding: 5px;
+  float: left;
+  width:20%;
+}
+.sub > .user > .icon > a >img{
+  margin: 0;
+  width:100% ;
+  height: auto;
+}
+.sub > .user > .user-name{
+  display: flex;
+  padding-right: 10px;
+  width: 50%;
+  margin: 0;
+  float: left;
+}
+.sub > .user > .user-name > p{
+  margin:auto 0;
+}
+.sub > .user > .follow-button{
+  height: 40px;
+  width: 30%;
+  margin: auto 0;
+  display: flex;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+}
+
+.sub > .user > .follow-button > form{
+  width: 100%;
+  display: flex;
+}
+
+.sub > .user > .follow-button > form > .follow, .unfollow{
+  padding: 0;
+  font-size: 12px;
+  margin: auto;
+}
+
+ 
+  .sub > .show-content{
+    border-right: 1px solid #a9a9a9;
+    border-left: 1px solid #a9a9a9;
+    border-bottom: 1px solid #a9a9a9;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  .sub > .show-content > .time{
+    border-top: 1px solid #a9a9a9;
+    padding: 2px;
+  }
+  
+  .main .show-image .function-button .like-user{
+    width: 85%;
+  }
+  .main .show-image img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .container{
+  padding-top: 80px;
+  position: relative;
+}
+.user-main > .name > h3{
+  margin-bottom: 5px;
+}
+
+.user-main{
+  width: 750px;
+  float: left;
+}
+
+.my-post >.row >.post > .image-holder{
+  margin-bottom: 10px;
+}
+.form{
+  width: 68%;
+}
+.user-ranking > .users > .user {
+    height: 55px;
+    padding-left: 10px;
+}
+.user-ranking > .users >.user > .icon {
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+.user-ranking > .users >.user > .icon > .user-icon {
+    border-radius: 50%;
+    width: 100%;
+    
+}
+.user-ranking > .users >.user > .content {
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 73%;
+    
+}
+.user-ranking > .users > .user > .content > .user-name {
+  margin:0;
+}
+.user-ranking > .users > .user > .content > .user-name > h5 {
+  font-size: 15px;
+    margin: 0;
+}
+    
+.user-ranking > .users > .user > .content > div >.list-inline {
+  margin: 0;
+}  
+.user-ranking > .users > .user > .content  > div >.list-inline >.list-inline-item > a {
+  font-size: 12px;
+}
+.sp-header{
+  display:none;
+}
+.sp-only{
+  display:none;
+}
+.pc-header >.user-sub{
+  width:25%;
+}
+.pc-header > .user-sub > .follow-button{
+  width: 70%;
+  height: 50px;
+  border: 1px solid #a9a9a9;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+.pc-header > .user-sub > .follow-button > form{
+  margin: auto;
+}
+.pc-header > .user-sub > .follow-button > a{
+  margin: auto;
+  text-decoration: none;
+  color: #000;
+}
+.pc-header > .user-main{
+  width:75%;
+  padding-left: 15px;
+  padding-top:15px;
+}
+
+.post > .image-holder > .user{
+  margin-bottom: 15px;
+  display: flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  height: auto;
+}
+.post > .image-holder > .user > .icon{
+  margin: 0;
+  float: left;
+  width: 30%;
+  padding: 5px;
+  height: auto;
+}
+.post > .image-holder > .user > .icon > a >img{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.post > .image-holder > .user > .icon > a >img:hover{
+  opacity:0.6;
+}
+.post > .image-holder > .user >  .user-name{
+  margin: 0;
+  display: flex;
+  float: left;
+  width: 70%;
+}
+.post > .image-holder > .user > .user-name > p{
+  margin: auto 0;
+}
+.show-users >.users >.user{
+  display: flex;
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  margin-bottom: 0;
+  padding: 10px;
+  height: auto;
+}
+.show-users >.users >.user > .icon{
+  float: left;
+  width: 25%;
+  margin: 0;
+  height: auto;
+  padding-right: 5px;
+}
+.users >.user > .icon >.user-icon{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+.users >.user > .content{
+  float: left;
+  margin: auto 0;
+  width: 55%;
+  padding-right:5px;
+}
+.users > .user >.content >.user-name > h5{
+  margin: 0;
+}
+.users > .user >.content >.user-name >div > ul{
+  margin:0;
+}
+.users >.user > .follow-button{
+  float:left;
+  width: 25%;
+  display: flex;
+  height: 50px;
+  margin: auto 0;
+  border: solid 1px #a9a9a9;
+  border-radius: 5px;
+}
+.users > .user > .follow-button > form{
+  width: 100%;
+  display: flex;
+}
+.users > .user > .follow-button > form > .follow, .unfollow{
+  padding: 0;
+  font-size: 16px;
+  margin: auto;
+}
+.sp-timeline{
+  display:none;
+}
+}
