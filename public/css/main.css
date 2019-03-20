@@ -53,7 +53,7 @@ header{
     border-bottom: 1px solid #a9a9a9;
 }
 .container{
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 160px);
   margin-bottom:60px;
 }
 
@@ -1675,10 +1675,6 @@ font-size: 13px;
   position: relative;
 }
 
-  .container{
-  padding-top: 80px;
-  position: relative;
-}
 .user-main > .name > h3{
   margin-bottom: 5px;
 }
