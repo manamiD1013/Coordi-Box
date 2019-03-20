@@ -14,7 +14,7 @@
                         <div class="user-name">
                             <h5>{!! link_to_route('users.show', $user->name, ['id' => $user->id]) !!}</h5>
                         </div>
-                        <div>
+                        <div class="pc-only">
                             <ul class="list-inline">
                             <li class="list-inline-item"><a href="{{ route('users.show', ['id' => $user->id]) }}"><span>{{ $user->posts->count() }}投稿</span></a></li>
                             <li class="list-inline-item"><a href="{{ route('users.followers', ['id' => $user->id]) }}" class=" {{ Request::is('users/*/followers') ? 'active' : '' }}"><span>{{ $user->followers->count() }}</span>フォロワー</a></li>
