@@ -5,13 +5,14 @@
         <title>Coordi Box</title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-        <!--<link rel="stylesheet" href="{{ asset('css/drawer.css') }}"/>-->
-        <link rel="stylesheet" href="{{ asset('css/hiraku.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/animate.min.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/normalize.min.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/hiraku.css') }}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="{{ secure_asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/fakeLoader.css') }}">
         <link rel="stylesheet" href="{{ asset('css/croppie.css') }}">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/croppie/2.6.2/croppie.min.css">
-        <link rel="stylesheet" href="{{ asset('css/fakeLoader.css') }}">
         <style type="text/css">
 
         
@@ -32,7 +33,15 @@
   width: 130px;
   margin: 20px auto 0;
 }
-
+.modal-footer >.contribute-button{
+  width: 80px;
+  height: 40px;
+  color: #fff;
+  background-color: #6EB7DB;
+  border: none;
+  border-radius: 5px;
+  margin:0;
+}
 
 }
 
@@ -55,6 +64,15 @@ left: 100%;
 -ms-transform: translate(-50%,-50%);
 -o-transform: translate(-50%,-50%);
 transform: translate(-50%,-50%);
+}
+.modal-footer >.contribute-button{
+  width: 80px;
+  height: 40px;
+  color: #fff;
+  background-color: #6EB7DB;
+  border: none;
+  border-radius: 5px;
+  margin:0;
 }
 }
 
@@ -79,7 +97,15 @@ left: 100%;
 -o-transform: translate(-50%,-50%);
 transform: translate(-50%,-50%);
 }
-
+.modal-footer >.contribute-button{
+  width: 80px;
+  height: 40px;
+  color: #fff;
+  background-color: #6EB7DB;
+  border: none;
+  border-radius: 5px;
+  margin:0;
+}
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -102,6 +128,15 @@ left: 100%;
 -ms-transform: translate(-50%,-50%);
 -o-transform: translate(-50%,-50%);
 transform: translate(-50%,-50%);
+}
+.modal-footer >.contribute-button{
+  width: 80px;
+  height: 40px;
+  color: #fff;
+  background-color: #6EB7DB;
+  border: none;
+  border-radius: 5px;
+  margin:0;
 }
 }
 
@@ -126,12 +161,32 @@ left: 100%;
 -o-transform: translate(-50%,-50%);
 transform: translate(-50%,-50%);
 }
+.modal-footer >.contribute-button{
+  width: 80px;
+  height: 40px;
+  color: #fff;
+  background-color: #6EB7DB;
+  border: none;
+  border-radius: 5px;
+  margin:0;
+}
 }
         </style>
     </head>
 
     <body>
+        <script src="{{ secure_asset('js/jquery-3.3.1.js') }}"></script>
+        <script src="{{ secure_asset('js/fakeLoader.js') }}"></script>
         <div class="fakeLoader"></div>
+        <script>
+            $.fakeLoader({
+            timeToHide: 1200, //ローディング画面が消えるまでの時間
+            zIndex: 999, //z-indexの値
+            spinner: "spinner2", //ローディングアニメーションの種類。spinner1～7が指定可能
+            bgColor: "#ffffff", //背景色
+             });
+        </script>
+        <script src="{{ secure_asset('js/bootstrap.bundle.min.js') }}"></script>
         @include('commons.navbar')
         
         <div class="container col-10 mx-auto">
@@ -194,26 +249,19 @@ transform: translate(-50%,-50%);
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 </div>
-        <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
-        <script src="{{ asset('js/fakeLoader.js') }}"></script>
-        <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
-        <script src="{{ asset('js/mobile-detect.js') }}"></script>
-        <script src="{{ asset('js/animatedModal.js') }}"></script>
-        <script src="{{ asset('js/jquery.bootstrap-growl.js') }}"></script>
-        <script src="{{ asset('js/hiraku.js') }}"></script>
-        <script src="{{ asset('js/main.js') }}"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+        
+        <script src="{{ secure_asset('js/infinite-scroll.pkgd.min.js') }}"></script>
+        <script src="{{ secure_asset('js/mobile-detect.js') }}"></script>
+        <script src="{{ secure_asset('js/animatedModal.js') }}"></script>
+        <script src="{{ secure_asset('js/hiraku.js') }}"></script>
+        <script src="{{ secure_asset('js/main.js') }}"></script>
+        <script src="{{ secure_asset('js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ secure_asset('js/all.js') }}"></script>
         <script src="{{ asset('js/croppie.js') }}"></script>
         
+        
 <script type="text/javascript">
-    $.fakeLoader({
-      timeToHide: 1200, //ローディング画面が消えるまでの時間
-      zIndex: 999, //z-indexの値
-      spinner: "spinner2", //ローディングアニメーションの種類。spinner1～7が指定可能
-      bgColor: "#ffffff", //背景色
-    });
+    
     var infScroll = new InfiniteScroll( '.scroll_area', {
         path : ".pagination a[rel=next]",
         append : ".post"

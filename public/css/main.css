@@ -8,6 +8,11 @@ html, body {
 p{
   font-size:14px;
 }
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #6EB7DB;
+}
 .follow-button > form > .follow, .unfollow{
     outline: 0;
     border: none;
