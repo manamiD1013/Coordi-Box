@@ -13,7 +13,7 @@ class CreateBookmarksTable extends Migration
      */
     public function up()
     {
-        Schema::create('coordi-box', function (Blueprint $table) {
+        Schema::create('bookmarks', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned()->index();
             $table->integer('post_id')->unsigned()->index();
@@ -36,6 +36,6 @@ class CreateBookmarksTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('coordi-box');
+        Schema::dropIfExists('bookmarks');
     }
 }
