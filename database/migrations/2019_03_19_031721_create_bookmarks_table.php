@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBookmarkPostTable extends Migration
+class CreateBookmarksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateBookmarkPostTable extends Migration
      */
     public function up()
     {
-        Schema::create('bookmark_post', function (Blueprint $table) {
+        Schema::create('coordi-box', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned()->index();
             $table->integer('post_id')->unsigned()->index();
@@ -25,6 +25,7 @@ class CreateBookmarkPostTable extends Migration
 
             // user_idとfollow_idの組み合わせの重複を許さない
             $table->unique(['user_id', 'post_id']);
+
         });
     }
 
@@ -35,6 +36,6 @@ class CreateBookmarkPostTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bookmark_post');
+        Schema::dropIfExists('coordi-box');
     }
 }
