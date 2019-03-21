@@ -71,6 +71,7 @@
         </script>
         
         @include('commons.navbar')
+        @include('commons.createbutton')
         <div class="main-image">
             <img src="https://s3-ap-northeast-1.amazonaws.com/coordi-box/main.png"></img>
             <div>
