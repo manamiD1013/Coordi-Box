@@ -249,7 +249,8 @@ transform: translate(-50%,-50%);
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 </div>
-        
+        <script src="{{ asset('js/croppie.js') }}"></script>
+        <script src="{{ asset('js/jquery.bootstrap-growl.js') }}"></script>
         <script src="{{ secure_asset('js/infinite-scroll.pkgd.min.js') }}"></script>
         <script src="{{ secure_asset('js/mobile-detect.js') }}"></script>
         <script src="{{ secure_asset('js/animatedModal.js') }}"></script>
@@ -257,7 +258,7 @@ transform: translate(-50%,-50%);
         <script src="{{ secure_asset('js/main.js') }}"></script>
         <script src="{{ secure_asset('js/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ secure_asset('js/all.js') }}"></script>
-        <script src="{{ asset('js/croppie.js') }}"></script>
+        
         
         
 <script type="text/javascript">
