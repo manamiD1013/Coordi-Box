@@ -71,19 +71,24 @@
         </script>
         
         @include('commons.navbar')
-        @include('commons.createbutton')
+        
         <div class="main-image">
             <img src="https://s3-ap-northeast-1.amazonaws.com/coordi-box/main.png"></img>
+            
             <div>
                 <h1>お気に入りのコーディネートを共有しよう</h1>
+                @if(!Auth::check())
                 <ul class="list-inline">
                     <li class="list-inline-item">{!! link_to_route('signup.get', '会員登録') !!}</li>
                     <li class="list-inline-item">{!! link_to_route('login', 'ログイン') !!}</li>
                 </ul>
+                @endif
             </div>
             
         </div>
+        
         <div class="container col-lg-9 col-md-10 col-12 mx-auto clearfix" style="padding-top:20px">
+        @include('commons.createbutton')
         <div class="clearfix">
             <div class="main .col-xl-9 col-lg-8 col-md-8 col-sm-12 float-right">
             <div class="new-post index">
