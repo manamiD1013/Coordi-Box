@@ -249,6 +249,7 @@ transform: translate(-50%,-50%);
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 </div>
+<footer class="footer"><small>©️Coordi Box</small></footer>
         <script src="{{ asset('js/croppie.js') }}"></script>
         <script src="{{ asset('js/jquery.bootstrap-growl.js') }}"></script>
         <script src="{{ secure_asset('js/infinite-scroll.pkgd.min.js') }}"></script>

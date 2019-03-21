@@ -183,6 +183,7 @@ transform: translate(-50%,-50%);
         
         <div class="container col-10 mx-auto">
             @include('commons.error_messages')
+            @include('commons.createbutton')
         <div>
         <h1>プロフィール編集</h1>
     </div>
@@ -255,7 +256,7 @@ transform: translate(-50%,-50%);
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 </div>
-        
+    <footer class="footer"><small>©️Coordi Box</small></footer>
         <script src="{{ secure_asset('js/infinite-scroll.pkgd.min.js') }}"></script>
         <script src="{{ secure_asset('js/mobile-detect.js') }}"></script>
         <script src="{{ secure_asset('js/animatedModal.js') }}"></script>
