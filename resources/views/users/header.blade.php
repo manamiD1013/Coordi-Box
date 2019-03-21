@@ -13,10 +13,10 @@
     </div>
     <div class="user-main">
         <div class="name">
-            <h1>{{ $user->name }}</h1>
+            <h1 style="margin:0">{{ $user->name }}</h1>
         </div>
         <div class="user-id">
-            <p>{{ $user->uid }}</p>
+            <p>&#64;{{ $user->uid }}</p>
         </div>
         <ul class="list-inline sp-only">
             <li class="list-inline-item"><a href="#modal-01" id="open-01"> <span>フォロー{{ $user->followings->count() }}</span></a>
@@ -137,7 +137,7 @@
             </div> 
             </li>
         </ul>
-        <div class="introduce">
+        <div class="introduce" style="margin-top:10px;">
             <p style="word-break: break-all;">{!! nl2br(e($user->introduce)) !!}</p>   
         </div>
         </div>

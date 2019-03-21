@@ -5,7 +5,7 @@
         @include('users.header', ['user' => $user])
     </div>
     <div class="user-nav shows">@include('users.navbar', ['user' => $user])</div>
-    <div class="index">
+    <div class="index show">
         @include('posts.posts', ['posts' => $posts])
         {{ $posts->links() }}
         <div style="
