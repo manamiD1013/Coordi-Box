@@ -161,7 +161,7 @@
             <h1>{{ $user->name }}</h1>
         </div>
         <div class="user-id">
-            <p>{{ $user->uid }}</p>
+            <p>&#64;{{ $user->uid }}</p>
         </div> 
         </div>
         
