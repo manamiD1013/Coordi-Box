@@ -8,33 +8,6 @@ html, body {
 p{
   font-size:14px;
 }
-.main-image{
-  padding-top:56px;
-  position: relative;
-  background-color: black;
-}
-.main-image>img{
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-  opacity:0.8;
-}
-.main-image>div{
-  position: absolute;
-  top: calc(50% + 40px);
-  left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  margin:0;/*余計な隙間を除く*/
-  padding:0;/*余計な隙間を除く*/
-  color: white;
-  text-align:center;
-  width:100%;
-}
-.main-image>div>ul>li>a{
-  color:white;
-}
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;

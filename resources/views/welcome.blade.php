@@ -15,7 +15,19 @@
         <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
         
     </head>
-
+    <style type="text/css">
+        @media (max-width: 575.98px) {
+            .main-image > img{
+                height: 150px;
+            }
+            .main-image>div>h1{
+                font-size:16px;
+            }
+            .main-image>div>ul>li>a{
+                font-size:14px;
+            }
+        }
+    </style>
     <body>
         <script src="{{ secure_asset('js/jquery-3.3.1.js') }}"></script>
         <script src="{{ secure_asset('js/bootstrap.bundle.min.js') }}"></script>
