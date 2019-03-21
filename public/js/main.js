@@ -18,6 +18,7 @@ $win.on('load resize', function() {
     $('.user-ranking > .users').addClass('row');
     $('.container>.index').addClass('row');
     $('.index > .row').css('padding','0');
+    $('.sp-header').parent().parent().css("padding-top","56px")
   } else if (window.matchMedia('(max-width: 767.98px) and (min-width: 576px)').matches) {
    $('.navbar > nav').removeClass('navbar-collapse');
   } else {
