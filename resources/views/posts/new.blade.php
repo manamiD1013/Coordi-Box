@@ -6,5 +6,7 @@
     </div>
     <div class="new-post index">
         @include('posts.posts', ['posts' => $posts])
+        {{ $posts->links() }}
     </div>
+    
 @endsection

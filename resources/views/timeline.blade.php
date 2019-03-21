@@ -5,7 +5,11 @@
             <span style="font-size:18px;">フォロー中のユーザーの投稿</span>
             <div class="timeline" style="margin-top:10px">
                 @if (count($posts) > 0)
-                    <div class="row" id="infinite-scroll">
+                    <div class="row mx-auto scroll_area"
+                        data-infinite-scroll='{
+                        "path": ".pagination a[rel=next]",
+                        "append": ".post"
+                    }'>
                         @foreach ($posts as $post)    
                             <div class="col-md-4 col-lg-４ post">
                                 
@@ -29,6 +33,7 @@
                     </div>
                 @endif
             </div>
+            {{ $posts->links() }}
         </div>
         <div class="side-bar col-lg-3 col-md-4 float-left">
             <div class="search">
@@ -41,7 +46,11 @@
         
     <div class="sp-timeline">
         @if (count($posts) > 0)
-                    <div class="row" id="infinite-scroll">
+                    <div class="row mx-auto scroll_area"
+                        data-infinite-scroll='{
+                        "path": ".pagination a[rel=next]",
+                        "append": ".post"
+                    }'>
                         @foreach ($posts as $post)    
                             <div class="col-sm-6 col-12 post">
                                 
@@ -114,5 +123,5 @@
                     </div>
                 @endif
     </div>
-    
+    {{ $posts->links() }}
 @endsection
