@@ -2154,7 +2154,8 @@ font-size: 13px;
   display:none;
 }
 .pc-header >.user-sub{
-  width:25%;
+  width:20%;
+  font-size:14px;
 }
 .pc-header > .user-sub > .follow-button{
   width: 70%;
@@ -2170,9 +2171,10 @@ font-size: 13px;
   margin: auto;
   text-decoration: none;
   color: #000;
+  font-size:14px;
 }
 .pc-header > .user-main{
-  width:75%;
+  width:80%;
   padding-left: 15px;
   padding-top:15px;
 }

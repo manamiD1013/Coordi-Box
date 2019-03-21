@@ -201,7 +201,7 @@ transform: translate(-50%,-50%);
                     {!! Form::label('image', '画像', ['class' => 'form-title col-lg-2 col-xs-12']) !!}
                     <div class="image col-lg-10 col-md-12 col-xs-12 mx-auto">
                         <div class="upload-image">
-                            <img src="/storage/no_image.png" class="submit-image"></img>
+                            <img src="https://s3-ap-northeast-1.amazonaws.com/coordi-box/no_image.png" class="submit-image"></img>
                         </div>
                         <div class="button">
                           <div class="file-button">

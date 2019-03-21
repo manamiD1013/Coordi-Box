@@ -195,7 +195,7 @@ transform: translate(-50%,-50%);
                     <div class="image col-lg-10 col-md-12 col-xs-12 mx-auto">
                         <div class="upload-image">
                             @if($user->icon_url == null)
-                                <img src="/storage/dafault_icon.png" class="user-icon">
+                                <img src="https://s3-ap-northeast-1.amazonaws.com/coordi-box/dafault_icon.png" class="user-icon">
                             @else
                                 <img src="https://s3-ap-northeast-1.amazonaws.com/coordi-box/{{$user->icon_url}}" class="user-icon">
                             @endif
