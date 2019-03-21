@@ -47,16 +47,14 @@ class PostsController extends Controller
         // list(, $fileData) = explode(',', $image);
         // $fileData = base64_decode($fileData);
         $image_name= time().'.jpg';
-        // 保存するパスを決める
-        $public_path = public_path('storage/upload/'.$image_name);
+        
         $path = 'upload/'. $image_name;
         
         $img = Image::make($image)
                 ->backup()
                 ->resize(650, null, function ($constraint) {
                     $constraint->aspectRatio();
-                })
-                ->save($public_path,100);
+                });
         
         // AWS S3 に保存する
         Storage::disk('s3')->put($path, $img->encode(), 'public');
