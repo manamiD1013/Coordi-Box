@@ -2155,7 +2155,6 @@ font-size: 13px;
 }
 .pc-header >.user-sub{
   width:20%;
-  font-size:14px;
 }
 .pc-header > .user-sub > .follow-button{
   width: 70%;
@@ -2166,6 +2165,9 @@ font-size: 13px;
 }
 .pc-header > .user-sub > .follow-button > form{
   margin: auto;
+}
+.pc-header > .user-sub > .follow-button > form>input{
+  font-size:14px;
 }
 .pc-header > .user-sub > .follow-button > a{
   margin: auto;
