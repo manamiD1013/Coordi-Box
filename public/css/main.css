@@ -26,7 +26,16 @@ p{
 .follow-button:hover>form >input{
   background-color:#f5f5f5;
 }
-
+.page-link {
+  color:#000;
+}
+.pagination{
+  margin: auto;
+}
+.page-item.active .page-link {
+  background-color: #6EB7DB;
+  border:1px solid #6EB7DB;
+}
 .contribute-button{
     width: 100px;
     margin-top: 10px;

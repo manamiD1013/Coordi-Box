@@ -48,7 +48,7 @@
             </div>
         @endforeach
     </div>
-    <div>
+    <div style="display:flex;">
         {{ $users->render('pagination::bootstrap-4') }}
     </div>
 @endif

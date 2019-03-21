@@ -6,7 +6,6 @@
     </div>
     <div class="index">
         @include('posts.posts', ['posts' => $posts])
-        {{ $posts->links() }}
     </div>
     
 @endsection

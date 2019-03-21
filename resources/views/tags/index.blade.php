@@ -12,5 +12,8 @@
             </div>
         @endforeach
     </div>
+    <div style="display:flex; margin-top:20px">
+        {{ $tags->render('pagination::bootstrap-4') }}
+    </div>
 @endif
 @endsection

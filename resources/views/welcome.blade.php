@@ -28,7 +28,7 @@
             bgColor: "#ffffff", //背景色
              });
         </script>
-        <script src="{{ secure_asset('js/bootstrap.bundle.min.js') }}"></script>
+        
         @include('commons.navbar')
         
         <div class="container col-lg-9 col-md-10 col-12 mx-auto clearfix">
