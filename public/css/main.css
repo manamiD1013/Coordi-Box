@@ -403,7 +403,9 @@ width: 130px;
   color:#fff;
   font-size:24px;
 }
-.sp-user-ranking > ul{
+  .sp-user-ranking > ul{
+  display: flex;
+  height: auto;
   padding:0;
   overflow-x: auto;
   white-space: nowrap;
@@ -413,12 +415,17 @@ width: 130px;
   display: none;
 }
 .sp-user-ranking > ul > li{
-  
-  display: inline-block;
-  width: 95px;
-  /* 見た目調整 */
-  height: auto;
-  margin: 3px;
+  display: flex;
+  margin-left:10px;
+  height:auto;
+}
+.sp-user-ranking > ul > li>a{
+  margin: 0;
+  height: 100%;
+  width: auto;
+}
+.sp-user-ranking > ul > li>a>img{
+  margin:0;
 }
 .tag-post{
   margin-left:-15px;
@@ -891,6 +898,8 @@ font-size: 13px;
   }
   
   .sp-user-ranking > ul{
+  display: flex;
+  height: auto;
   padding:0;
   overflow-x: auto;
   white-space: nowrap;
@@ -900,13 +909,19 @@ font-size: 13px;
   display: none;
 }
 .sp-user-ranking > ul > li{
-  
-  display: inline-block;
-  width: 95px;
-  /* 見た目調整 */
-  height: auto;
-  margin: 3px;
+  display: flex;
+  margin-left:10px;
+  height:auto;
 }
+.sp-user-ranking > ul > li>a{
+  margin: 0;
+  height: 100%;
+  width: auto;
+}
+.sp-user-ranking > ul > li>a>img{
+  margin:0;
+}
+
 .tag-post{
   margin-left:-15px;
   margin-right:-15px;

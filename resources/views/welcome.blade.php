@@ -83,7 +83,8 @@
             
         </div>
         <div class="container col-lg-9 col-md-10 col-12 mx-auto clearfix" style="padding-top:20px">
-        <div class="main .col-xl-9 col-lg-8 col-md-8 col-sm-12 float-right">
+        <div class="clearfix">
+            <div class="main .col-xl-9 col-lg-8 col-md-8 col-sm-12 float-right">
             <div class="new-post index">
                 <h1>新着</h1>
                 @if (count($posts) > 0)
@@ -191,6 +192,8 @@
                 @endif
             </div>
         </div>
+        </div>
+        
         <div class="sp-user-ranking">
             <h1>人気のユーザー</h1>
             @if (count($user_ranking) > 0)
