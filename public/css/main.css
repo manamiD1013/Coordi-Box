@@ -477,7 +477,7 @@ width: 130px;
   
 }
   .container{
-  padding-top: 60px;
+  padding-top: 80px;
   position: relative;
 }
 .pc-show{
@@ -832,7 +832,7 @@ font-size: 13px;
     padding:0;
   }
 	.container{
-  padding-top:60px;
+  padding-top:80px;
 }
 	.navbar-brand{
     margin: auto;

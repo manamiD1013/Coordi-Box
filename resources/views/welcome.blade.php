@@ -16,6 +16,33 @@
         
     </head>
     <style type="text/css">
+        .main-image{
+  padding-top:56px;
+  position: relative;
+  background-color: black;
+}
+.main-image>img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  opacity:0.8;
+}
+.main-image>div{
+  position: absolute;
+  top: calc(50% + 40px);
+  left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  margin:0;/*余計な隙間を除く*/
+  padding:0;/*余計な隙間を除く*/
+  color: white;
+  text-align:center;
+  width:100%;
+}
+.main-image>div>ul>li>a{
+  color:white;
+}
         @media (max-width: 575.98px) {
             .main-image > img{
                 height: 150px;
@@ -30,8 +57,8 @@
     </style>
     <body>
         <script src="{{ secure_asset('js/jquery-3.3.1.js') }}"></script>
-        <script src="{{ secure_asset('js/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ secure_asset('js/ofi.js') }}"></script>
+        <script src="{{ secure_asset('js/bootstrap.bundle.min.js') }}"></script>
         <script src="{{ secure_asset('js/fakeLoader.js') }}"></script>
         <div class="fakeLoader"></div>
         <script>
