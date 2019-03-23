@@ -169,23 +169,14 @@ width: 130px;
   height: 50px;
   border: 1px solid #a9a9a9;
 }
-.pc-show >.main >.comment{
-  height: 250px;
-  border-right: 1px solid #a9a9a9;
-  border-left: 1px solid #a9a9a9;
-  border-bottom: 1px solid #a9a9a9;
-  padding:10px;
-}
+
 .pc-show>.main >.comment-form{
-  height: 60px;
   border-right: 1px solid #a9a9a9;
   border-left: 1px solid #a9a9a9;
   border-bottom: 1px solid #a9a9a9;
   
 }
-.pc-show > .main > .comment-form > form{
-  padding:10px;
-}
+
 .comment-form > form >.comment-button> .btn-primary{
   background-color: #6EB7DB;
   border:1px solid #6EB7DB;
@@ -196,14 +187,6 @@ width: 130px;
 .comment-form > .guest{
   text-align: center;
   padding: 5px;
-}
-.icon{
-  width: 50px;
-  height: 50px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-  float: left;
 }
 
 .show-tag >ul {
@@ -603,12 +586,12 @@ width: 130px;
 .comment-form{
   border-top: 1px solid #a9a9a9;
   position: absolute;
-    bottom: 0;
-    height: 67px;
-    padding: 5px;
-    border-top: 1px solid #a9a9a9;
-    width: 100%;
-    background-color: #fff;
+  bottom: 0;
+  height: 67px;
+  padding: 5px;
+  border-top: 1px solid #a9a9a9;
+  width: 100%;
+  background-color: #fff;
 }
 .comment-form >form> .icon{
   margin: 0;
@@ -1540,6 +1523,44 @@ font-size: 13px;
     margin-left: 15px;
     margin-top: 5px;
 }
+.pc-show >.main >.comment{
+  height: 200px;
+  border-right: 1px solid #a9a9a9;
+  border-left: 1px solid #a9a9a9;
+  border-bottom: 1px solid #a9a9a9;
+  padding:10px;
+}
+.comment-form{
+    height: auto;
+    display: flex;
+    padding: 5px;
+  }
+  .comment-form > form{
+    display: flex;
+    height: auto;
+    width: 100%;
+  }
+  .comment-form>form > .icon{
+    margin: 0;
+    width: 15%;
+    height: auto;
+  }
+  
+  .comment-form > form > .icon > img{
+    height: auto;
+    margin: 0;
+    width: 100%;
+  }
+  .comment-form > form >.form{
+    width:60%;
+    margin: auto;
+    padding-left: 10px;
+  }
+  .comment-form > form > .comment-button{
+    width: 25%;
+    margin: auto;
+    padding-left: 10px;
+  }
 .sp-header{
   display:none;
 }
@@ -1860,6 +1881,44 @@ font-size: 13px;
     margin-left: 15px;
     margin-top: 5px;
 }
+.pc-show >.main >.comment{
+  height: 200px;
+  border-right: 1px solid #a9a9a9;
+  border-left: 1px solid #a9a9a9;
+  border-bottom: 1px solid #a9a9a9;
+  padding:10px;
+}
+.comment-form{
+    height: auto;
+    display: flex;
+    padding: 5px;
+  }
+  .comment-form > form{
+    display: flex;
+    height: auto;
+    width: 100%;
+  }
+  .comment-form>form > .icon{
+    margin: 0;
+    width: 10%;
+    height: auto;
+  }
+  
+  .comment-form > form > .icon > img{
+    height: auto;
+    margin: 0;
+    width: 100%;
+  }
+  .comment-form > form >.form{
+    width:70%;
+    margin: auto;
+    padding-left: 10px;
+  }
+  .comment-form > form > .comment-button{
+    width: 20%;
+    margin: auto;
+    padding-left: 10px;
+  }
  .sp-header{
   display:none;
 }
@@ -2144,6 +2203,44 @@ font-size: 13px;
   .main .show-image img{
     width: 100%;
     height: auto;
+  }
+  .pc-show >.main >.comment{
+  height: 250px;
+  border-right: 1px solid #a9a9a9;
+  border-left: 1px solid #a9a9a9;
+  border-bottom: 1px solid #a9a9a9;
+  padding:10px;
+}
+  .comment-form{
+    height: auto;
+    display: flex;
+    padding: 5px;
+  }
+  .comment-form > form{
+    display: flex;
+    height: auto;
+    width: 100%;
+  }
+  .comment-form>form > .icon{
+    margin: 0;
+    width: 10%;
+    height: auto;
+  }
+  
+  .comment-form > form > .icon > img{
+    height: auto;
+    margin: 0;
+    width: 100%;
+  }
+  .comment-form > form >.form{
+    width:70%;
+    margin: auto;
+    padding-left: 10px;
+  }
+  .comment-form > form > .comment-button{
+    width: 20%;
+    margin: auto;
+    padding-left: 10px;
   }
   
   .container{

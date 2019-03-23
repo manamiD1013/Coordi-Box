@@ -124,7 +124,7 @@
                             <div class="form float-left">
                                 {!! Form::text('comment', null,['class' => 'form-control']) !!}    
                             </div>
-                            <div class="comment-button float-right" style="width:20%;">
+                            <div class="comment-button float-right">
                                 <input type="button" value="送信" onclick="submit();" class="btn btn-block btn-primary", id="submit-button" style="width:100%;">
                             </div>
                             
