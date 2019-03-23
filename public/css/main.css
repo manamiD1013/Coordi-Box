@@ -142,6 +142,7 @@ display:none;	/* アップロードボタンのスタイルを無効にする */
 .user-sub > .icon > img{
   width: 100%;
   height: auto;
+  margin-bottom:10px;
 }
 .select-image {
 text-align: center;
@@ -1118,6 +1119,7 @@ font-size: 13px;
 .comment-form > .guest {
     text-align: center;
     padding-top: 15px;
+    margin auto;
 }
 .user-ranking > .users > .user {
     height: 100px;
