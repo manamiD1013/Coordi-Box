@@ -318,7 +318,7 @@
                     </div>
                 </div>
                     <div id="sp-comment" class="show-comment">
-                        <a href="#modal-01" id="open-01">この投稿へのコメントを見る</a>
+                        <a href="#modal-01" id="open-01" style="font-size:14px">この投稿へのコメントを見る</a>
                     <div id="modal-01">
                         <span class="close-modal-01 clearfix"><i class="fas fa-times fa-2x float-right"></i></span>
                         

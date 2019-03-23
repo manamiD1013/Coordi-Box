@@ -495,7 +495,7 @@ width: 130px;
 .sp-show > .show-content{
   width:95%;
   margin: 0 auto;
-  margin-bottom:25px;
+  padding:10px 0 10px 0;
 }
 .sp-show > .show-tag{
   width:95%;
@@ -1040,7 +1040,7 @@ font-size: 13px;
 .sp-show > .show-content{
   width:95%;
   margin: 0 auto;
-  margin-bottom:25px;
+  padding:10px 0 10px 0;
 }
 
 .sp-show > .show-tag{
@@ -1048,11 +1048,6 @@ font-size: 13px;
   margin: 0 auto;
 }
 
-.sp-show > .show-content{
-  width:95%;
-  margin: 0 auto;
-  margin-bottom:25px;
-}
 .sp-show > .show-tag{
   width:95%;
   margin: 0 auto;
