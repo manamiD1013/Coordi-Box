@@ -193,6 +193,7 @@
     <body>
         <script src="{{ secure_asset('js/jquery-3.3.1.js') }}"></script>
         <script src="{{ secure_asset('js/fakeLoader.js') }}"></script>
+        <script src="{{ secure_asset('js/bootstrap.bundle.min.js') }}"></script>
         <div class="fakeLoader"></div>
         <script>
             $.fakeLoader({
@@ -202,7 +203,7 @@
             bgColor: "#ffffff", //背景色
              });
         </script>
-        <script src="{{ secure_asset('js/bootstrap.bundle.min.js') }}"></script>
+        
         @include('commons.navbar')
         @include('commons.createbutton')
         <div class="tag-header">

@@ -251,8 +251,8 @@
                                                 </div>
                                                 <div>
                                                     <ul class="list-inline">
-                                                    <li class="list-inline-item"><a href="#"><span>{{ $follower->posts->count() }}</span>投稿</a></li>
-                                                    <li class="list-inline-item"><a href="#"><span>{{ $follower->followers->count() }}</span>フォロワー</a></li>
+                                                    <li class="list-inline-item"><span>{{ $follower->posts->count() }}</span>投稿</li>
+                                                    <li class="list-inline-item"><span>{{ $follower->followers->count() }}</span>フォロワー</a></li>
                                                    </ul> 
                                                 </div>
                                             </div>

@@ -31,6 +31,7 @@
     <body>
         <script src="{{ secure_asset('js/jquery-3.3.1.js') }}"></script>
         <script src="{{ secure_asset('js/fakeLoader.js') }}"></script>
+        <script src="{{ secure_asset('js/bootstrap.bundle.min.js') }}"></script>
         <div class="fakeLoader"></div>
         <script>
             $.fakeLoader({
@@ -40,7 +41,7 @@
             bgColor: "#ffffff", //背景色
              });
         </script>
-        <script src="{{ secure_asset('js/bootstrap.bundle.min.js') }}"></script>
+        
         @include('commons.navbar')
         @include('commons.createbutton')
         
@@ -166,15 +167,26 @@
                                     @endif
                                 </div>
                             @elseif(Auth::id() == $post->user->id)
-                                    
-                                @endif
-                            @else
-                                <div class="follow-button float-right">
-                                    {!! Form::open(['route' => ['user.follow', $post->user->id]]) !!}
-                                        {!! Form::submit('フォロー', ['class' => "follow"]) !!}
-                                    {!! Form::close() !!}
-                                </div>
-                            @endif     
+                                <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                        
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li class="dropdown-item">
+                                            {!! Form::model($post, ['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
+                                                {!! Form::submit('削除') !!}
+                                            {!! Form::close() !!}
+                                        </li>
+                                    </ul>
+                                </li>    
+                            @endif
+                        @else
+                            <div class="follow-button float-right">
+                                {!! Form::open(['route' => ['user.follow', $post->user->id]]) !!}
+                                    {!! Form::submit('フォロー', ['class' => "follow"]) !!}
+                                {!! Form::close() !!}
+                            </div>
+                        @endif     
                     
                 </div>
                 <div class="show-content">
@@ -224,7 +236,18 @@
                             @endif
                         </div>
                     @elseif(Auth::id() == $post->user->id)
-                                    
+                        <li class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                        
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li class="dropdown-item">
+                                            {!! Form::model($post, ['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
+                                                {!! Form::submit('削除') !!}
+                                            {!! Form::close() !!}
+                                        </li>
+                                    </ul>
+                                </li>               
                     @endif
                 @else
                     <div class="follow-button float-right">

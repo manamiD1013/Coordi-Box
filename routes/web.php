@@ -29,7 +29,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('timeline', 'PostsController@timeline')->name('timeline');
     Route::resource('users', 'UsersController', ['only' => ['edit', 'update']]);
     Route::post('users','UsersController@uploadUserIcon')->name('crop');
-    Route::resource('posts', 'PostsController', ['only' => ['create', 'store']]);
+    Route::resource('posts', 'PostsController', ['only' => ['create', 'store','destroy']]);
     Route::group(['prefix' => 'posts/{id}'], function(){
         Route::resource('comments', 'CommentsController', ['only' => ['store']]);
         Route::post('bookmark', 'BookmarksController@store')->name('bookmarks.bookmark');

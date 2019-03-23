@@ -97,6 +97,16 @@ class PostsController extends Controller
         return view('posts.show', $data);
     }
     
+    public function destroy($id){
+        $post = Post::find($id);
+        $image_name = $post->image_url;
+        
+        
+            $post->delete();
+            Storage::disk('s3')->delete($image_name);
+        
+        return redirect('/');
+    }
     public function timeline(){
         $data = [];
         if (\Auth::check()) {

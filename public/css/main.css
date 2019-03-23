@@ -551,6 +551,10 @@ width: 130px;
   font-size: 13px;
   margin: auto;
 }
+.sp-show > .user >.nav-item{
+  width:25%;
+  text-align:center;
+}
 .function-button{
   width: 100%;
   height: 45px;
@@ -1029,6 +1033,10 @@ font-size: 13px;
   font-size: 18px;
   margin: auto;
 }
+.sp-show > .user >.nav-item{
+  width:20%;
+  text-align:center;
+}
 .sp-show > .show-content{
   width:95%;
   margin: 0 auto;
@@ -1480,7 +1488,7 @@ font-size: 13px;
 }
 .sub > .user > .follow-button{
   height: 30px;
-  width: 30%;
+  
   margin: auto 0;
   display: flex;
   border: 1px solid #a9a9a9;
@@ -1496,6 +1504,10 @@ font-size: 13px;
   padding: 0;
   font-size: 11px;
   margin: auto;
+}
+.sub >.user>.nav-item{
+  width: 30%;
+  text-align:right;
 }
 
 .sub > .show-content{
@@ -1815,7 +1827,10 @@ font-size: 13px;
   font-size: 12px;
   margin: auto;
 }
-
+.sub >.user>.nav-item{
+  width: 30%;
+  text-align:right;
+}
 .sub > .show-content{
     border-right: 1px solid #a9a9a9;
     border-left: 1px solid #a9a9a9;
@@ -2111,7 +2126,10 @@ font-size: 13px;
   font-size: 12px;
   margin: auto;
 }
-
+.sub >.user>.nav-item{
+  width: 30%;
+  text-align:right;
+}
  
   .sub > .show-content{
     border-right: 1px solid #a9a9a9;
