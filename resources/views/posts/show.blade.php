@@ -167,14 +167,14 @@
                                     @endif
                                 </div>
                             @elseif(Auth::id() == $post->user->id)
-                                <li class="nav-item dropdown">
+                                <li class="nav-item dropdown" style="    margin: auto;">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                                         
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-right">
                                         <li class="dropdown-item">
                                             {!! Form::model($post, ['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
-                                                {!! Form::submit('削除') !!}
+                                                {!! Form::submit('削除',['class' => 'btn','style'=>'border:none;padding:0;']) !!}
                                             {!! Form::close() !!}
                                         </li>
                                     </ul>
@@ -236,14 +236,14 @@
                             @endif
                         </div>
                     @elseif(Auth::id() == $post->user->id)
-                        <li class="nav-item dropdown">
+                        <li class="nav-item dropdown" style="    margin: auto;">
                                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                                         
                                     </a>
                                     <ul class="dropdown-menu dropdown-menu-right">
                                         <li class="dropdown-item">
                                             {!! Form::model($post, ['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
-                                                {!! Form::submit('削除') !!}
+                                                {!! Form::submit('削除',['class' => 'btn','style'=>'border:none;padding:0;']) !!}
                                             {!! Form::close() !!}
                                         </li>
                                     </ul>
