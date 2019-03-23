@@ -130,7 +130,7 @@
                             
                         {!! Form::close() !!}
                     @else
-                        <div class="guest" style="display:flex; height:100%;">
+                        <div class="guest" style="display:flex; height:100%;margin:auto;">
                             <p style="margin:auto;">コメントをするには{!! link_to_route('signup.get', '会員登録',[],['class' => 'link']) !!}、もしくは{!! link_to_route('login', 'ログイン',[],['class' => 'link']) !!}をしてください。</p>   
                         </div>
                         

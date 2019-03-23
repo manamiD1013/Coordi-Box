@@ -1116,11 +1116,7 @@ font-size: 13px;
 .comment-form > form> .comment-button{
   padding-top: 7px;
 }
-.comment-form > .guest {
-    text-align: center;
-    padding-top: 15px;
-    margin auto;
-}
+
 .user-ranking > .users > .user {
     height: 100px;
     width: 100px;
