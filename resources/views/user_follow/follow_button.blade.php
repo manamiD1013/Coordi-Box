@@ -10,7 +10,8 @@
             {!! Form::close() !!}
         @endif
     @elseif(Auth::id() == $user->id)
-        {!! link_to_route('users.edit', 'プロフィール編集', ['id' => $user->id]) !!}
+            {!! link_to_route('users.edit', '編集', ['id' => $user->id]) !!}
+        
     @endif
 @else
     {!! Form::open(['route' => ['user.follow', $user->id]]) !!}

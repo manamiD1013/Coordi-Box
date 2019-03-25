@@ -4,11 +4,15 @@ var unfollow ={
   "border":"1px solid #6EB7DB"
 };
 
+
+
 $(".index >.pagination").css("opacity","0");
-$(".unfollow").parent().parent().css(unfollow);
-$(".unfollow").css(
-  "background-color","#6EB7DB"
-);
+$(".unfollow").css(unfollow)
+$(".unfollow").parent().parent(".user>.follow-button").css({
+  "background-color":"#6EB7DB",
+  "border":"1px solid #6EB7DB"
+})
+$(".user-main > .clearfix > .follow-button > form>.unfollow ").css(unfollow);
 
 var $win = $(window);
 

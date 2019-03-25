@@ -59,6 +59,7 @@
         <script src="{{ secure_asset('js/jquery-3.3.1.js') }}"></script>
         <script src="{{ secure_asset('js/ofi.js') }}"></script>
         <script src="{{ secure_asset('js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ secure_asset('js/mobile-detect.js') }}"></script>
         <script src="{{ secure_asset('js/fakeLoader.js') }}"></script>
         <div class="fakeLoader"></div>
         <script>
@@ -71,7 +72,7 @@
         </script>
         
         @include('commons.navbar')
-        
+        <script src="{{ secure_asset('js/main.js') }}"></script>
         <div class="main-image">
             <img src="https://s3-ap-northeast-1.amazonaws.com/coordi-box/main.png"></img>
             
@@ -224,10 +225,8 @@
         
         
         <script src="{{ secure_asset('js/infinite-scroll.pkgd.min.js') }}"></script>
-        <script src="{{ secure_asset('js/mobile-detect.js') }}"></script>
         <script src="{{ secure_asset('js/animatedModal.js') }}"></script>
         <script src="{{ secure_asset('js/hiraku.js') }}"></script>
-        <script src="{{ secure_asset('js/main.js') }}"></script>
         <script src="{{ secure_asset('js/all.js') }}"></script>
         
 <script type="text/javascript">

@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <title>Coordi Box</title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="{{ secure_asset('css/animate.min.css') }}">
         <link rel="stylesheet" href="{{ secure_asset('css/normalize.min.css') }}">
         <link rel="stylesheet" href="{{ secure_asset('css/hiraku.css') }}">
@@ -193,8 +192,8 @@ transform: translate(-50%,-50%);
         <div class="col-lg-9 col-sm-10 col-12 mx-auto">
           {!! Form::model($user, ['route' => ['users.update', $user->id], 'method' => 'put']) !!}
                 <div class="form-group row">
-                    {!! Form::label('image', '画像', ['class' => 'form-title col-lg-2 col-12']) !!}
-                    <div class="image col-lg-10 col-md-12 col-12 mx-auto">
+                    {!! Form::label('image', '画像', ['class' => 'form-title col-lg-2 col-xs-12']) !!}
+                    <div class="image col-lg-10 col-md-12 col-xs-12 mx-auto">
                         <div class="upload-image">
                             @if($user->icon_url == null)
                                 <img src="https://s3-ap-northeast-1.amazonaws.com/coordi-box/dafault_icon.png" class="user-icon">
@@ -215,19 +214,19 @@ transform: translate(-50%,-50%);
                 </div>
                 <div class="form-group row">
                     {!! Form::label('uid', 'ユーザーID', ['class' => 'form-title col-lg-2 col-xs-12 uid']) !!}
-                    <div class="col-lg-5 col-12">
+                    <div class="col-lg-5 col-xs-12">
                         {!! Form::text('uid', null,['class' => 'form-control uid']) !!}
                     </div>
                 </div>
                 <div class="form-group row">
                     {!! Form::label('name', 'ユーザー名', ['class' => 'form-title col-lg-2 col-xs-12 user-name']) !!}
-                    <div class="col-lg-5 col-12">
+                    <div class="col-lg-5 col-xs-12">
                         {!! Form::text('name', null,['class' => 'form-control user-name']) !!}
                     </div>
                 </div>
                 <div class="form-group row">
                     {!! Form::label('introduce', '自己紹介', ['class' => 'form-title col-lg-2 col-xs-12 introduce']) !!}
-                    <div class="caption-group col-lg-10 col-12">
+                    <div class="caption-group col-lg-10 col-xs-12">
                         {!! Form::textarea('introduce', null,['class' => 'form-control introduce']) !!}
                     </div>
                 </div>

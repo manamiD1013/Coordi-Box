@@ -174,7 +174,7 @@
                                     <ul class="dropdown-menu dropdown-menu-right">
                                         <li class="dropdown-item">
                                             {!! Form::model($post, ['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
-                                                {!! Form::submit('削除',['class' => 'btn','style'=>'border:none;padding:0;']) !!}
+                                                {!! Form::submit('削除',['class' => 'btn','style'=>'border:none;padding:0;width:100%;']) !!}
                                             {!! Form::close() !!}
                                         </li>
                                     </ul>
@@ -243,7 +243,7 @@
                                     <ul class="dropdown-menu dropdown-menu-right">
                                         <li class="dropdown-item">
                                             {!! Form::model($post, ['route' => ['posts.destroy', $post->id], 'method' => 'delete']) !!}
-                                                {!! Form::submit('削除',['class' => 'btn','style'=>'border:none;padding:0;']) !!}
+                                                {!! Form::submit('削除',['class' => 'btn','style'=>'border:none;padding:0;width:100%']) !!}
                                             {!! Form::close() !!}
                                         </li>
                                     </ul>

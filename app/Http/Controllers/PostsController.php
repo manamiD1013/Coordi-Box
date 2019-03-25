@@ -43,9 +43,7 @@ class PostsController extends Controller
         ]);
         
         $image = $request->image;
-        // list(, $fileData) = explode(';', $image);
-        // list(, $fileData) = explode(',', $image);
-        // $fileData = base64_decode($fileData);
+        
         $image_name= time().'.jpg';
         
         $path = 'upload/'. $image_name;
@@ -100,10 +98,12 @@ class PostsController extends Controller
     public function destroy($id){
         $post = Post::find($id);
         $image_name = $post->image_url;
-        
-        
+        if(\Auth::id() === $post->user->id){
             $post->delete();
             Storage::disk('s3')->delete($image_name);
+        }else{
+            return redirect('/');
+        }
         
         return redirect('/');
     }
