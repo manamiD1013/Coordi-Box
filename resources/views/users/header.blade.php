@@ -165,7 +165,7 @@
         </div> 
         </div>
         
-        <div class="follow-button row">
+        <div class="follow-button">
             @include('user_follow.follow_button', ['user' => $user])   
         </div>
         </div>

@@ -671,7 +671,7 @@ width: 130px;
   margin:0;
   padding-right:15px;
   float: left;
-  width: 65%;
+  width: 60%;
 }
 .sp-header > .user-main > div>.user-name> .name > h1{
   font-size: 18px;
@@ -701,14 +701,15 @@ font-size: 13px;
   padding: 0;
 }
 .sp-header > .user-main > div> .follow-button{
-    width: 35%;
+    width: 40%;
+    margin:0;
     display: flex;
     border-radius: 5px;
     text-align: center;
 }
 
 .sp-header > .user-main > div> .follow-button > a{
-  font-size: 16px;
+  font-size: 12px;
   margin: auto;
   padding: 5px 20px;
   border: 1px solid #a9a9a9;
@@ -720,13 +721,13 @@ font-size: 13px;
 .sp-header > .user-main >div> .follow-button > form > .unfollow{
   font-size: 12px;
   margin: auto;
-  padding: 10px 10px;
+  padding: 10px 15px;
   border-radius: 15px;
 }
 .sp-header > .user-main >div> .follow-button > form > .follow{
   font-size: 12px;
   margin: auto;
-  padding: 10px 10px;
+  padding: 10px 15px;
   border: 1px solid #a9a9a9;
   border-radius: 15px;
 }
