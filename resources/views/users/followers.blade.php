@@ -13,7 +13,6 @@
         ">
         @if (count($users) == 0)
             <p>まだフォロワーがいません。</p>
-            
         @endif
         </div>
     </div>

@@ -225,6 +225,13 @@
                                     </div>
                                 @endforeach
                             </div>
+                        @else
+                            <div style="
+                                margin: auto;
+                                text-align: center;
+                            ">
+                                <p>まだ誰もフォローしていません。</p>
+                            </div>
                         @endif    
                     </div>
                 </div>      
@@ -282,6 +289,13 @@
                                         </div>
                                     </div>
                                 @endforeach
+                            </div>
+                        @else
+                            <div style="
+                                margin: auto;
+                                text-align: center;
+                            ">
+                                <p>まだフォロワーがいません。</p>
                             </div>
                         @endif 
                     </div>

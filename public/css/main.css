@@ -235,7 +235,9 @@ width: 130px;
   border: 1px solid #6EB7DB;
   color: #fff;
 }
-  
+.sub> .user > .icon > a >img:hover,.post-comment>.icon > a >img:hover,.post > .image-holder > .user > .icon > a >img:hover{
+  opacity:0.6;
+} 
 .tags > p{
   font-size: 20px;
   border-bottom: 1px solid #a9a9a9;
@@ -731,9 +733,7 @@ font-size: 13px;
   border: 1px solid #a9a9a9;
   border-radius: 15px;
 }
-/*.pc-only{*/
-/*  display:none;*/
-/*}*/
+
 .follow, .follower{
   padding-right:15px;
   padding-left:15px;
@@ -1242,10 +1242,6 @@ font-size: 13px;
   height: auto;
 }
 
-.post > .image-holder > .user > .icon > a >img:hover{
-  opacity:0.6;
-}
-
 .post > .image-holder > .user >  .user-name{
   margin: 0;
   display: flex;
@@ -1649,9 +1645,7 @@ font-size: 13px;
   width: 100%;
   height: auto;
 }
-.post > .image-holder > .user > .icon > a >img:hover{
-  opacity:0.6;
-}
+
 .post > .image-holder > .user >  .user-name{
   margin: 0;
   display: flex;
@@ -2025,9 +2019,7 @@ font-size: 13px;
   width: 100%;
   height: auto;
 }
-.post > .image-holder > .user > .icon > a >img:hover{
-  opacity:0.6;
-}
+
 .post > .image-holder > .user >  .user-name{
   margin: 0;
   display: flex;
@@ -2419,9 +2411,7 @@ font-size: 13px;
   height: auto;
 }
 
-.post > .image-holder > .user > .icon > a >img:hover{
-  opacity:0.6;
-}
+
 .post > .image-holder > .user >  .user-name{
   margin: 0;
   display: flex;
